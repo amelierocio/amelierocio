@@ -167,6 +167,25 @@
   .pkg-deliverables li { font-size: 0.82rem; color: #8A8680; display: flex; align-items: flex-start; gap: 0.5rem; }
   .pkg-deliverables li::before { content: '✦'; color: var(--terracotta); flex-shrink: 0; margin-top: 0.1em; }
 
+  /* VIDEOS */
+  .videos { background: var(--cream); }
+  .videos-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; margin-bottom: 0.5rem; }
+  .videos-sub { font-size: 0.95rem; color: var(--text-mid); font-weight: 300; margin-bottom: 2.5rem; }
+  .platform-label { font-size: 0.95rem; font-weight: 500; color: var(--text-dark); margin-bottom: 1.2rem; }
+  .embed-grid { display: grid; gap: 1rem; margin-bottom: 1rem; }
+  .ig-grid { grid-template-columns: repeat(3, 1fr); }
+  .tt-grid { grid-template-columns: repeat(3, 1fr); }
+  .embed-wrap { display: flex; justify-content: center; overflow: hidden; border-radius: 12px; }
+  .embed-wrap .instagram-media { min-width: 0 !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  .embed-wrap .tiktok-embed { min-width: 0 !important; width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+  @media (max-width: 720px) {
+    .ig-grid { grid-template-columns: repeat(2, 1fr); }
+    .tt-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .ig-grid, .tt-grid { grid-template-columns: 1fr; }
+  }
+
   /* HOW IT WORKS */
   .howitworks { background: var(--cream); }
   .howitworks h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.4rem); font-weight: 400; margin-bottom: 0.5rem; }
@@ -428,6 +447,34 @@
         <div class="step-desc">O conteúdo vai ao ar. O seu negócio chega a uma audiência nova.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="videos">
+  <div class="container">
+    <p class="section-label reveal">Conteúdo · Contenido</p>
+    <h2 class="videos-title reveal">Me veja em ação</h2>
+    <p class="videos-sub reveal">É assim que eu conto histórias — de verdade, na câmera, sem filtro. <em>Así cuento historias — de verdad, en cámara, sin filtro.</em></p>
+
+    <p class="platform-label reveal">📸 Instagram</p>
+    <div class="embed-grid ig-grid">
+      <div class="embed-wrap reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DSLX6UBEbAn/" data-instgrm-version="14"></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.05s"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DR2xguDEWpb/" data-instgrm-version="14"></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.1s"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRhimHQERg5/" data-instgrm-version="14"></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.15s"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DS505ehkRhm/" data-instgrm-version="14"></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.2s"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DKpOqGXtFKV/" data-instgrm-version="14"></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.25s"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DE2bnhKRYiT/" data-instgrm-version="14"></blockquote></div>
+    </div>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+    <p class="platform-label reveal" style="margin-top:3rem;">🎵 TikTok</p>
+    <div class="embed-grid tt-grid">
+      <div class="embed-wrap reveal"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@amelierocio/video/7420843048529169670" data-video-id="7420843048529169670"><section></section></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.1s"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@amelierocio/video/7636166363832339733" data-video-id="7636166363832339733"><section></section></blockquote></div>
+      <div class="embed-wrap reveal" style="transition-delay:0.2s"><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@amelierocio/video/7636178735468924180" data-video-id="7636178735468924180"><section></section></blockquote></div>
+    </div>
+    <script async src="https://www.tiktok.com/embed.js"></script>
   </div>
 </section>
 
